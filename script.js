@@ -114,5 +114,42 @@ laughWithWhile(6);
 
 // ex 5
 function addDigits(num) {
-    
+    var res = num.toString();
+    var somme = 0;
+  
+    for (var i = 0; i < res.length; i++) {
+      somme += parseInt(res[i]);
+    }
+  
+    return somme;
 }
+addDigits(29);
+
+// ex 6
+
+// ex 7
+function evenDigitsOnly(input) {
+    for (var i = 0; i < input.length; i++) {
+      if (parseInt(input[i]) % 2 !== 0) {
+        return false
+      }
+    }
+    return true
+}
+evenDigitsOnly("1253");
+
+function evenDigitsOnly(input) {
+    let i = 0;
+    
+    while (i < input.length) {
+      if (parseInt(input[i]) % 2 !== 0) {
+        return false 
+      }
+      i++
+    }
+    
+    return true
+}
+evenDigitsOnly("62680");
+
+//ex 8
